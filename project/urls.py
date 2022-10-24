@@ -20,6 +20,7 @@ from ejemplo.views import index_dos
 from ejemplo.views import index_tres
 from ejemplo.views import imc
 from ejemplo.views import monstrar_familiares
+from blog.views import index as blog_index 
 
 
 urlpatterns = [
@@ -29,4 +30,6 @@ urlpatterns = [
     path("mostrar-notas/", index_tres),
     path("ejemplo/<int:peso>/<int:altura>/", imc),
     path("mi-familia/", monstrar_familiares),
+    path("blog/", blog_index),
+
 ]
