@@ -21,6 +21,7 @@ from ejemplo.views import index_tres
 from ejemplo.views import imc
 from ejemplo.views import monstrar_familiares
 from blog.views import index as blog_index 
+from ejemplo.views import BuscarFamiliar
 
 
 urlpatterns = [
@@ -31,5 +32,6 @@ urlpatterns = [
     path("ejemplo/<int:peso>/<int:altura>/", imc),
     path("mi-familia/", monstrar_familiares),
     path("blog/", blog_index),
+    path("mi-familia/buscar", BuscarFamiliar.as_view()),
 
 ]
